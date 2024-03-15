@@ -339,7 +339,7 @@ MonoBehaviour:
   - {fileID: 408818503}
   - {fileID: 1669914756}
   startDelay: 2
-  spawnInterval: 1
+  spawnInterval: 3
 --- !u!4 &441074981
 Transform:
   m_ObjectHideFlags: 0
@@ -942,7 +942,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4991065362652987271, guid: 2fd79dd98b7ba9e4592c85a14dc55861, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.52
+      value: -38.76
       objectReference: {fileID: 0}
     - target: {fileID: 4991065362652987271, guid: 2fd79dd98b7ba9e4592c85a14dc55861, type: 3}
       propertyPath: m_LocalPosition.y
