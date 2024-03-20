@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     public float speed = 10.0f;
     public float xRange = 10;
     public GameObject projectilePrefab;
+    public float Lives = 3.0f;
+    private float NotLives = 0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +37,18 @@ public class PlayerController : MonoBehaviour
         {
             // Launch a projectile from the player
             Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+        }
+
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Lives = " + Lives);
+        Lives = 10 - NotLives;
+        NotLives++;
+        if(Lives <=0)
+        {
+            Debug.Log("Game Over");
         }
     }
 }
