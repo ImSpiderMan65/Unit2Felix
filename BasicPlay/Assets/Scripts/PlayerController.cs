@@ -49,6 +49,7 @@ public class PlayerController : MonoBehaviour
         if(Lives <=0)
         {
             Debug.Log("Game Over");
+            Destroy(gameObject);
         }
     }
 }
